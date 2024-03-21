@@ -30,6 +30,14 @@ let team = [
         image : 'barbara-ramos-graphic-designer.jpg'
     },
 ];
+
+
 for (let value of team){
-    console.log(value.fullname)
+    console.log(value.fullname +' '+ value.role + ' '+ value.image)
+    
+    // let elPeople = document.createElement('div');
+    // elPeople.innerHTML = `${value.fullname}`
+    let elPeople = document.createElement('div');
+    elPeople.innerHTML = `Nome Completo `
+    document.querySelector('.container').appendChild(elPeople)
 }
