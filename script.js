@@ -38,6 +38,8 @@ for (let value of team){
     // let elPeople = document.createElement('div');
     // elPeople.innerHTML = `${value.fullname}`
     let elPeople = document.createElement('div');
-    elPeople.innerHTML = `Nome completo: ${value.fullname} Ruolo: ${value.role} Immagine: ${value.image}`
-    document.querySelector('.container').appendChild(elPeople)
+    elPeople.className = 'card'
+    elPeople.innerHTML = ` <img src="img/${value.image}"> <div>${value.fullname}</div> <div>${value.role}</div>`
+    document.getElementsByTagName('img').className = 'card-img-top'
+    document.querySelector('.col').appendChild(elPeople)
 }
