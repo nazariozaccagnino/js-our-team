@@ -38,6 +38,6 @@ for (let value of team){
     // let elPeople = document.createElement('div');
     // elPeople.innerHTML = `${value.fullname}`
     let elPeople = document.createElement('div');
-    elPeople.innerHTML = `Nome Completo `
+    elPeople.innerHTML = `Nome completo: ${value.fullname} Ruolo: ${value.role} Immagine: ${value.image}`
     document.querySelector('.container').appendChild(elPeople)
 }
